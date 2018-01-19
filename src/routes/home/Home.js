@@ -27,7 +27,11 @@ class Home extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1>React.js News</h1>
+          <h1>Damnit Gary</h1>
+          <img
+            src="https://i.ytimg.com/vi/3RrKKhkMnZY/maxresdefault.jpg"
+            alt="damnit, gary"
+          />
           {this.props.news.map(item => (
             <article key={item.link} className={s.newsItem}>
               <h1 className={s.newsTitle}>
