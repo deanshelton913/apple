@@ -1,24 +1,16 @@
 {
   "name": "apple",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".babelrc.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "start": "node ./app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/deanshelton913/apple.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/deanshelton913/apple/issues"
-  },
-  "homepage": "https://github.com/deanshelton913/apple#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.16.2"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
