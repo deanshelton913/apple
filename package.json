@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "8.6.0"
+  },
   "name": "apple",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }
