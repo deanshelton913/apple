@@ -17,6 +17,7 @@
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
     "express-jwt": "^5.3.0",
+    "express-naked-redirect": "^0.1.1",
     "graphql": "^0.12.3",
     "history": "^4.7.2",
     "isomorphic-style-loader": "^4.0.0",
