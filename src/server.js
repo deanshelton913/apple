@@ -76,7 +76,10 @@ if (__DEV__) {
 app.get(
   '/login/facebook',
   passport.authenticate('facebook', {
-    scope: ['email', 'user_location'],
+    scope: [
+      'email',
+      // 'user_location' // pending facebook approval
+    ],
     session: false,
   }),
 );
