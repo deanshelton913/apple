@@ -1,8 +1,8 @@
 @import '../../stylesheets/partials/_media-queries.scss';
 
 .container {
-  background-color: #000;
-  color: #fff;
+  background-color: $_dark-background-color;
+  color: $_text-on-dark-background;
 
   .content {
     max-width: $max-content-width;
@@ -20,7 +20,7 @@
     padding: 1em;
 
     &:not(:last-child) {
-      border-bottom: 1px solid #2e2e2e;
+      border-bottom: 1px solid $_dark-border;
 
       @include tablet-and-up {
         border-bottom: none;
@@ -37,10 +37,14 @@
       padding: 0;
       font-size: 1.2em;
       line-height: 0.9em;
+      margin-bottom: 0.5em;
     }
 
     p {
-      color: #666;
+      color: $_muted-text-on-dark-background;
+      margin-bottom: 0.5em;
+      font-size: 0.9em;
+      line-height: 1.2em;
     }
   }
 }

@@ -1,9 +1,29 @@
+
+
+// Media Queries and hard-coded px values
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$max-content-width: 1024px;
+
+// Color Palette
+$--white: #fff;
+$--grey1: #666;
+$--grey2: #2e2e2e;
+$--black: #000;
+
 // Typography
 $base-font-family: 'Roboto Condensed', sans-serif;
 $base-font-size: 18px;
 $base-font-weight: 300;
+$base-font-color: $--black;
 
-// Media Queries
-$tablet-width: 768px;
-$desktop-width: 1024px;
-$max-content-width: 1024px;
+// Semantic text variables
+$_muted-text-on-dark-background: $--grey1;
+$_text-on-dark-background: $--white;
+$_light-background: $--black;
+
+// Semantic border colors
+$_dark-border: $--grey2;
+
+// Semantic background colors
+$_dark-background-color: $--black;
