@@ -21,6 +21,8 @@ module.exports = {
   ],
 
   rules: {
+    'media-feature-name-no-unknown': null,
+    'at-rule-no-unknown': null,
     'property-no-unknown': [
       true,
       {

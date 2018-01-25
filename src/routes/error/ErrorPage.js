@@ -10,7 +10,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './ErrorPage.css';
+import s from './ErrorPage.scss';
 
 class ErrorPage extends React.Component {
   static propTypes = {
@@ -36,7 +36,7 @@ class ErrorPage extends React.Component {
     }
 
     return (
-      <div>
+      <div className={s.container}>
         <h1>Error</h1>
         <p>Sorry, a critical error occurred on this page.</p>
       </div>
