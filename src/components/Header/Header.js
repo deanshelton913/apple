@@ -19,11 +19,10 @@ class Header extends React.Component {
       <div>
         <Navigation />
         <Link to="/">
-          <span>Your Company</span>
+          <span>Example nav link</span>
         </Link>
         <div>
-          <h1>React</h1>
-          <p>Complex web apps made easy</p>
+          <h1>HEADER</h1>
         </div>
       </div>
     );
