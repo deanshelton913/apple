@@ -8,13 +8,14 @@
  */
 
 import React from 'react';
+import HugeHeroSection from '../../components/HugeHeroSection';
 import ThreeColumnSection from '../../components/ThreeColumnSection';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1>Home</h1>
+        <HugeHeroSection />
         <ThreeColumnSection />
       </div>
     );
