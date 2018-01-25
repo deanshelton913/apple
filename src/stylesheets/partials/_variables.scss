@@ -3,7 +3,8 @@
 // Media Queries and hard-coded px values
 $tablet-width: 768px;
 $desktop-width: 1024px;
-$max-content-width: 1024px;
+$max-content-width: 914px;
+$max-container-width: 1024px;
 
 // Color Palette
 $--white: #fff;
@@ -12,6 +13,7 @@ $--grey2: #2e2e2e;
 $--black: #000;
 
 // Typography
+$title-font-family: fantasy, sans-serif; // hack. we dont have the fonts
 $base-font-family: 'Roboto Condensed', sans-serif;
 $base-font-size: 18px;
 $base-font-weight: 300;

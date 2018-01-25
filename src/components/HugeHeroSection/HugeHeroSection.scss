@@ -1,5 +1,5 @@
 
-@import '../../stylesheets/partials/_media-queries.scss';
+@import '../../stylesheets/all-partials.scss';
 
 .container {
   background-color: #0b9bca;
@@ -7,5 +7,34 @@
   .content {
     margin: 0 auto;
     max-width: $max-content-width;
+    padding: 2em;
+    height: calc(100vh - 40px);
+    min-height: 600px;
+
+    .mascot {
+      img {
+        width: 277px;
+        height: auto;
+      }
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        display: block;
+        width: 1800px;
+        height: 1800px;
+        background: radial-gradient(closest-side, #95deff, rgba(255, 255, 255, 0));
+        content: '';
+        transform: translate3d(-50%, -50%, -1px);
+      }
+    }
+
+    h1 {
+      font-family: $title-font-family;
+      color: $_text-on-dark-background;
+      font-size: 2em;
+    }
   }
 }
