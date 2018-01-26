@@ -3,18 +3,44 @@
 
 .container {
   background-color: #0b9bca;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 40px);
 
   .content {
     margin: 0 auto;
     max-width: $max-content-width;
     padding: 2em;
-    height: calc(100vh - 40px);
     min-height: 600px;
+    display: flex;
+    align-items: center;
+
+    .tagline {
+      flex: 1.5;
+
+      h1 {
+        font-family: $title-font-family;
+        color: $_text-on-dark-background;
+        font-size: 2.7em;
+        font-weight: bold;
+        line-height: 1.3em;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        line-height: 1.3em;
+        font-size: 1.5em;
+      }
+    }
 
     .mascot {
+      flex: 1;
+
       img {
         width: 277px;
         height: auto;
+        float: right;
       }
 
       &::after {
@@ -29,12 +55,6 @@
         content: '';
         transform: translate3d(-50%, -50%, -1px);
       }
-    }
-
-    h1 {
-      font-family: $title-font-family;
-      color: $_text-on-dark-background;
-      font-size: 2em;
     }
   }
 }

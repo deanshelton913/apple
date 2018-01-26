@@ -8,8 +8,15 @@ class HugeHeroSection extends React.Component {
     return (
       <section className={s.container}>
         <div className={s.content}>
-          <h1>Next level fanny pack ramps</h1>
-          <span>Blah blah blah</span>
+          <div className={s.tagline}>
+            <h1>
+              Blockchain<br />Business Magic&trade;
+            </h1>
+            <p>
+              Be a part of the most secure, flexible, and business ready
+              blockchain platform, and ecosystem.
+            </p>
+          </div>
           <div className={s.mascot}>
             <img src={mascot} alt="mascot" />
           </div>
