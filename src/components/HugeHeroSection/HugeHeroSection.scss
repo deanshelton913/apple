@@ -7,13 +7,16 @@
   height: auto;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
   z-index: 1;
 
-  > div {
-    flex: 1;
-    padding: 1em 0;
+  @include tablet-and-up {
+    display: flex;
+    align-items: center;
+
+    > div {
+      flex: 1;
+      padding: 1em 0;
+    }
   }
 
   .offer {
@@ -21,7 +24,7 @@
     font-size: 0.8em;
 
     h2 {
-      font-weight: bolder;
+      font-weight: bold;
       margin: 0.5em 0;
     }
 
@@ -50,13 +53,14 @@
       h1 {
         font-family: $title-font-family;
         color: $_text-on-light-background;
-        font-size: 2em;
         font-weight: bold;
         line-height: 1.1em;
+        font-size: 2em;
         margin-bottom: 0.5em;
 
         @include tablet-and-up {
           color: $_text-on-dark-background;
+          font-size: 3em;
         }
       }
 
