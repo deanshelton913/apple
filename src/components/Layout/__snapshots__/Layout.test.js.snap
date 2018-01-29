@@ -4,53 +4,64 @@ exports[`Layout renders children correctly 1`] = `
 <div
   className="container"
 >
-  <div>
+  <div
+    className="container"
+  >
+    <nav
+      className="drawer"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-times closeButton"
+        onClick={[Function]}
+      />
+      <ul>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            Menu Item
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            Menu Item
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            Menu Item
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            Menu Item
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div
-      role="navigation"
+      className="mobileMenu"
     >
-      <a
-        href="/about"
+      <i
+        aria-hidden="true"
+        className="fa fa-bars"
         onClick={[Function]}
-      >
-        About
-      </a>
-      <a
-        href="/contact"
-        onClick={[Function]}
-      >
-        Contact
-      </a>
-      <span>
-         | 
-      </span>
-      <a
-        href="/login"
-        onClick={[Function]}
-      >
-        Log in
-      </a>
-      <span>
-        or
-      </span>
-      <a
-        href="/register"
-        onClick={[Function]}
-      >
-        Sign up
-      </a>
-    </div>
-    <a
-      href="/"
-      onClick={[Function]}
-    >
-      <span>
-        Example nav link
-      </span>
-    </a>
-    <div>
-      <h1>
-        HEADER
-      </h1>
+      />
+      <img
+        alt="Dragonchain wordmark"
+        src="logo-black.svg"
+      />
     </div>
   </div>
   <div

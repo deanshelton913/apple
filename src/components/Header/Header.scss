@@ -1,10 +1,74 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 @import '../../stylesheets/partials/_variables.scss';
+
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: $_light-background-color;
+
+  .mobileMenu {
+    position: relative;
+    display: flex;
+    align-content: center;
+    font-size: 2em;
+
+    i {
+      flex: 0;
+      cursor: pointer;
+      padding: 0.5em;
+    }
+
+    img {
+      flex: 1;
+      height: 40px;
+      padding: 0.5em 0;
+    }
+  }
+}
+
+.drawer {
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  opacity: 0;
+  -webkit-text-size-adjust: none;
+  position: fixed;
+  top: 0;
+  left: -340px;
+  height: 100%;
+  width: 300px;
+  background: $_dark-background-color;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px;
+  -webkit-overflow-scrolling: touch;
+  z-index: 100;
+
+  &.open {
+    left: 0;
+    opacity: 1;
+  }
+
+  .closeButton {
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+
+  ul li {
+    &:not(:last-child) {
+      border-bottom: 1px solid $_dark-border;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      font-size: 1.1em;
+    }
+  }
+}
