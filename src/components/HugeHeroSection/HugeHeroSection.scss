@@ -9,6 +9,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  z-index: 1;
 
   > div {
     flex: 1;
