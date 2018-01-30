@@ -39,16 +39,16 @@ class Header extends React.Component {
           />
           <ul>
             <li>
-              <Link href="/">Menu Item</Link>
+              <Link to="/">Menu Item</Link>
             </li>
             <li>
-              <Link href="/">Menu Item</Link>
+              <Link to="/">Menu Item</Link>
             </li>
             <li>
-              <Link href="/">Menu Item</Link>
+              <Link to="/">Menu Item</Link>
             </li>
             <li>
-              <Link href="/">Menu Item</Link>
+              <Link to="/">Menu Item</Link>
             </li>
           </ul>
         </nav>
